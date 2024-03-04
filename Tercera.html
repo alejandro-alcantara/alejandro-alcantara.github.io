@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos 6.css">
+    <!--Página creada por: Alejandro Alcántara Crugeiras-->
+    
+
+    <title>La carpeta compartida</title>
+</head>
+<body>
+    <header class="header">
+        <div class = "logo"><a href = "#"><img src ="Images/How-to.png"></a></div>
+         <nav>
+            <ul class="nav-links">
+                <li><a href ="https://github.com/alejandro-alcantara"> Mi Github</a></li>
+                <li><a href ="https://www.instagram.com/alexacrug/"> Instagram</a></li>
+                <li><a href ="https://www.youtube.com/@user-td3np4ko6s"> Youtube</a></li>
+    
+
+            </ul>
+         </nav>
+         <a href="Contact.html">
+            <button class="bn54">
+              <span class="bn54span">Contact</span>
+            </button>
+         </a>
+    </header>
+    <center>
+        <h1 class="Intro">Creación de la carpeta compartida</h1>
+        <br>
+        <br>
+        <br>
+        <p>Una vez instalado Samba y haber hecho su configuración, añadimos el usuario winuser en samba</p>
+        <img src="Images/Capturitas_SISINFO/14.png" alt="14">
+        <br>
+        <br>
+        <p>Accedemos a la carpeta compartida y Creamos un archivo</p>
+        <p>(cd compartida) (touch archivo-linux)</p>
+        <img src="Images/Capturitas_SISINFO/15.png" alt="15">
+        <br>
+        <img src="Images/Capturitas_SISINFO/16.png" alt="16">
+        <br>
+        <br>
+        <p>Reiniciamos el servicio de samba (systemctl restart smbd.service)</p>
+        <img src="Images/Capturitas_SISINFO/samba restart.jpg" alt="restart">
+        <br>
+        <br>
+        <p>Accedemos a las direcciones IP de ambas máquinas</p>
+        <ul>
+            <li class="No_opc">ip a (Linux)</li>
+            <li class="No_opc">ipconfig (Windows)</li>
+        </ul>
+        <img src="Images/Capturitas_SISINFO/17.png" alt="17">
+        <br>
+        <img src="Images/Capturitas_SISINFO/18.png" alt="18">
+        <br>
+        <br>
+        <p>Hacemos ping en ambas máquinas (ping + ip de la otra máquina)</p>
+        <img src="Images/Capturitas_SISINFO/19.png" alt="19">
+        <br>
+        <img src="Images/Capturitas_SISINFO/20.png" alt="20">
+        <br>
+        <br>
+        <p>En windows, accedemos a la carpeta compartida usando (\\ip de linux\) en ejecutar</p>
+        <img src="Images/Capturitas_SISINFO/IP .jpg" alt="IP">
+        <br>
+        <img src="Images/Capturitas_SISINFO/carpeta compartida.jpg " alt="Carpeta compartida">
+        <h1 class="Fin">Et Voilá</h1>
+
+        <footer>
+            <h2 class="footing">Ale A.</h2>
+            <div class="footer-content">
+                <div class="container">
+                    <div class="card">
+                            <a href="Segunda.html"><img src="Images/Left.jpg" width="150" height="200"></a>
+                        <div class="contenido">
+                            <h3>Anterior</h3>
+                        </div>
+                    </div>
+            </div>
+            
+        </footer>
+        
+    </center>
+    
+</body>
+</html>

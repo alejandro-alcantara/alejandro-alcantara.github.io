@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos 5.css">
+    <!--Página creada por: Alejandro Alcántara Crugeiras-->
+    <title>Instalación de Samba (Y vim)</title>
+</head>
+<body>
+    <header class="header">
+        <div class = "logo"><a href = "#"><img src ="Images/How-to.png"></a></div>
+         <nav>
+            <ul class="nav-links">
+                <li><a href ="https://github.com/alejandro-alcantara"> Mi Github</a></li>
+                <li><a href ="https://www.instagram.com/alexacrug/"> Instagram</a></li>
+                <li><a href ="https://www.youtube.com/@user-td3np4ko6s"> Youtube</a></li>
+    
+
+            </ul>
+         </nav>
+         <a href="Contact.html">
+            <button class="bn54">
+              <span class="bn54span">Contact</span>
+            </button>
+         </a>
+    </header>
+  <center>
+    <!--División por apartados, relacionados con un aspecto del ejercicio-->
+    <h1 class="Inst_de">Instalación de Samba</h1>
+    <p>Todo este trámite se va a realizar en la máquina virtual de Ubuntu, la cual instalamos en los pasos previos</p>
+    <p>Para empezar, una vez iniciada la máquina, accedemos al usuario root utilizando el comando "su" y introducir la contraseña</p>
+    <p>Una vez en root, utilizamos los siguientes comandos para actualizar el sistema</p>
+    <ul>
+      <li>apt upgrade</li>
+      <li>apt update</li>
+    </ul>
+    <img src="Images/Capturitas_SISINFO/2.jpg" alt="apt update">
+    <br>
+    <br>
+    <p>Procedemos a Instalar Samba (apt install samba)</p>
+    <img src="Images/Capturitas_SISINFO/3.jpg" alt="apt install samba">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="Inst_de">Añadir otro usuario</h1>
+    <p>Añadimos otro usuario (adduser winuser)</p>
+    <img src="Images/Capturitas_SISINFO/4.jpg" alt="adduser Winuser">
+    <br>
+    <br>
+    <p>Ignoramos los datos en este caso y le damos a Enter en todo</p>
+    <img src="Images/Capturitas_SISINFO/6.jpg" alt="adduser Winuser">
+    <br>
+    <br>
+    <p>Cerramos sesión y entramos en la cuenta "winuser" usando la contraseña que le hemos asignado</p>
+    <img src="Images/Capturitas_SISINFO/7.png" alt=" Winuser">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="Inst_de">Crear la carpeta compartida</h1>
+    <p>Le damos a winuser permisos de administrador usando su y accedemos a la carpeta personal (cd .. si no estamos allí) (cd winuser)</p>
+    <img src="Images/Capturitas_SISINFO/8.png" alt=" Winuser cd">
+    <br>
+    <br>
+    <p>ahora creamos una carpeta llamada "compartida" (mkdir compartida)</p>
+    <img src="Images/Capturitas_SISINFO/9.png" alt=" Winuser mkdir ">
+    <br>
+    <br>
+    <p>le damos permisos a la nueva carpeta "compartida" (chmod 777 compartida/)</p>
+    <img src="Images/Capturitas_SISINFO/10.png" alt=" Winuser chmod">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="Inst_de">Instalación y uso de VIM y uso de nano</h1>
+    <!--Es mucho mas fácil usar nano, no quiero que nadie que siga el tutorial pase por el mismo suplicio-->
+    <p>Instalamos VIM (apt-get install vim)</p>
+    <img src="Images/Capturitas_SISINFO/11.png" alt="VIM">
+    <br>
+    <br>
+    <p>Usamos nano para cambiar el archivo de configuración de Samba</p>
+    <img src="Images/Capturitas_SISINFO/12b.png" alt=" Nano">
+    <br>
+    <br>
+    <p>Usamos nano para cambiar el archivo de configuración de Samba (usamos ctrl + x para guarday y aceptamos, luego, Enter)</p>
+    <img src="Images/Capturitas_SISINFO/13.png" alt="Nano2">
+    <br>
+    <br>
+    <h1 class="Inst_de">Procedemos en la siguiente página</h1>
+
+
+  </center>
+<!--Utilicé el footer para pasar de parte del tutorial-->
+  <footer>
+    <center><h2 class="footing">Ale A.</h2></center>
+    <div class="footer-content">
+        <div class="container">
+          <div class="card">
+            <a href="Primera.html"><img src="Images/Left.jpg" width="150" height="200"></a>
+        <div class="contenido">
+            <h3>Anterior</h3>
+        </div>
+    </div>
+            <div class="card">
+                    <a href="Tercera.html"><img src="Images/Right.jpg" width="150" height="200"></a>
+                <div class="contenido">
+                    <h3>Siguiente</h3>
+                </div>
+            </div>
+    </div>
+    
+</footer>
+
+
+</body>
+</html>
